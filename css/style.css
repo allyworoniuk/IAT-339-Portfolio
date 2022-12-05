@@ -70,6 +70,7 @@ h2{
   font-family: Rubik;
 }
 /* ---------COMBINED ELEMENTS--------- */
+/* navigation bar */
 .navbar{
   position: fixed;
   background-color: var(--acbeige);
@@ -77,6 +78,7 @@ h2{
   left: 0;
   top: 0;
   padding-top: 1em;
+  z-index: 10;
 }
 
 .navbar a{
@@ -108,7 +110,7 @@ h2{
   display: inline;
   padding-right: 2em;
 }
-
+/* Projects navigation bar */
 .project-navbar{
   position: fixed;
   transform: rotate(-.25turn);
@@ -122,23 +124,89 @@ h2{
   margin-left: 2em;
   text-decoration: none;
   font-family: Roboto;
+  font-weight: bold;
 }
 
 .project-navbar a:hover{
   border-bottom: solid 0.2em var(--acblue);
-  font-weight: bold;
+  font-style: italic;
 }
-
+/* Project containers */
 .project-container-step{
-
+  display: flex;
+  border: solid 0.1em var(--acblue);
+  padding: 2em;
+  height: 20%;
 }
 
 .project-container-step img{
-  border: solid 0.8em var(--acbrown);
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  border: ridge 0.5em var(--acbrown);
+  margin-right: 2em;
 }
 
 .project-container-step p{
+  display: inline-block;
+  height: 100%;
+  border: ridge 0.5em var(--acbrown);
 
+}
+/* project title image */
+.project-title-banner{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 40em;
+  border: solid 1px black;
+}
+
+.project-title-banner img{
+  z-index: 1;
+  width: 100%;
+  filter: brightness(0.50);
+}
+
+.project-title-banner h2{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 4;
+  font-size: 8em;
+  font-family: NerkoOne;
+  color: black;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bio-container{
+  display: flex;
+  padding: 5%;
+}
+
+.bio-container img{
+  display: inline-block;
+  border-radius: 50%;
+  width: 30em;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.bio-container h3{
+  font-size: 5em;
+  font-family: Rubik;
+}
+
+.bio-container span{
+  color: var(--acgreen);
+}
+
+.bio-container p{
+  display: block;
+  width: 100%;
 }
 
 /* ---------STYLE GUIDE CONTAINERS--------- */
