@@ -129,6 +129,18 @@ h2{
   font-weight: bold;
 }
 
+.project-container-step{
+
+}
+
+.project-container-step img{
+  border: solid 0.8em var(--acbrown);
+}
+
+.project-container-step p{
+
+}
+
 /* ---------STYLE GUIDE CONTAINERS--------- */
 #sg-text-elements{
   display: block;
