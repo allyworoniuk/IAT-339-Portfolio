@@ -1,0 +1,148 @@
+/* ---------FONT IMPORTS--------- */
+@font-face {
+  font-family: NerkoOne;
+  src: url(../fonts/NerkoOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: BreeSerif;
+  src: url(../fonts/BreeSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Courgette;
+  src: url(../fonts/Courgette-Regular.ttf);
+}
+/* ---------COLOUR VARIABLES--------- */
+:root{
+  --acblue: #96F5F5;
+  --acgreen: #82FF96;
+  --acyellow: #FFD050;
+  --acbrown: #AE7741;
+  --acbeige: #EDECE9;
+}
+/* ---------STYLES--------- */
+body{
+  font-family: Lato;
+  padding-top: 3em;
+  padding-left: 4em;
+}
+
+p{
+
+}
+
+p a{
+  color: var(--acgreen);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p a:hover{
+  font-style: italic;
+}
+
+h1{
+  font-family: BreeSerif;
+}
+
+h2{
+  font-family: Rubik;
+}
+/* ---------COMBINED ELEMENTS--------- */
+.navbar{
+  position: fixed;
+  background-color: var(--acbeige);
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 1em;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+}
+
+.navbar .name-logo{
+  margin-left: 1em;
+  font-family: Courgette;
+  font-size: 2em;
+}
+
+.navbar .name-logo:hover{
+  font-weight: bold;
+}
+
+.navbar ul{
+  float: right;
+}
+
+.navbar ul a:hover{
+  border-bottom: solid 0.2em var(--acbrown);
+  font-weight: bold;
+}
+
+.navbar ul li{
+  display: inline;
+  padding-right: 2em;
+}
+
+.project-navbar{
+  position: fixed;
+  transform: rotate(-.25turn);
+  margin-top: 20%;
+  left: -7em;
+}
+
+.project-navbar a{
+  color: black;
+  margin-right: 2em;
+  margin-left: 2em;
+  text-decoration: none;
+  font-family: Roboto;
+}
+
+.project-navbar a:hover{
+  border-bottom: solid 0.2em var(--acblue);
+  font-weight: bold;
+}
+
+/* ---------STYLE GUIDE CONTAINERS--------- */
+#sg-text-elements{
+  display: block;
+  border: solid 1px purple;
+}
+
+.headers-demo{
+  display: inline-block;
+  width: 49%;
+  border: solid 1px red;
+}
+
+.other-text-demo{
+  display: inline-block;
+  width: 49%;
+  border: solid 1px green;
+}
