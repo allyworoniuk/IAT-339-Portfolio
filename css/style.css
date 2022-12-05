@@ -63,10 +63,14 @@ p a:hover{
 }
 
 h1{
-  font-family: BreeSerif;
+  font-family: Courgette;
 }
 
 h2{
+  font-family: Rubik;
+}
+
+h3{
   font-family: Rubik;
 }
 /* ---------COMBINED ELEMENTS--------- */
@@ -147,12 +151,22 @@ h2{
   margin-right: 2em;
 }
 
-.project-container-step p{
+.project-container-step-right{
   display: inline-block;
+  padding: 2em;
   height: 100%;
   border: ridge 0.5em var(--acbrown);
-
 }
+
+.project-container-step-right p{
+  display: block;
+}
+
+.project-container-step-right h3{
+  display: block;
+  font-family: Rubik;
+}
+
 /* project title image */
 .project-title-banner{
   display: block;
@@ -165,7 +179,7 @@ h2{
 .project-title-banner img{
   z-index: 1;
   width: 100%;
-  filter: brightness(0.50);
+  filter: brightness(0.30);
 }
 
 .project-title-banner h2{
@@ -175,7 +189,7 @@ h2{
   z-index: 4;
   font-size: 8em;
   font-family: NerkoOne;
-  color: black;
+  color: var(--acbeige);
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
